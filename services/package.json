@@ -1,0 +1,15 @@
+{
+  "name": "@cron-job/services",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.1165.0",
+    "node-fetch": "^3.2.6",
+    "unsplash-js": "^7.0.15"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.101"
+  }
+}
