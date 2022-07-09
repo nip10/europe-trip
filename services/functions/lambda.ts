@@ -34,8 +34,8 @@ export async function main() {
 
   const msg: sgMail.MailDataRequired = {
     to: [
-      EMAIL_ADDRESS_1 as string,
-      EMAIL_ADDRESS_2 as string,
+      // EMAIL_ADDRESS_1 as string,
+      // EMAIL_ADDRESS_2 as string,
       EMAIL_ADDRESS_3 as string,
     ],
     from: "hello@diogocardoso.dev",
