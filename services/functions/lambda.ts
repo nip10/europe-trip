@@ -23,10 +23,8 @@ const dayOfTrip = new Date("2022-09-14");
 
 export async function main() {
   const randomCity = cities[Math.floor(Math.random() * cities.length)];
-  const photo = await unsplash.search.getPhotos({
+  const photo = await unsplash.photos.getRandom({
     query: randomCity,
-    page: 1,
-    perPage: 1,
   });
 
   const dateDiff = dayOfTrip.getTime() - new Date().getTime();
@@ -44,7 +42,8 @@ export async function main() {
       subject: `Faltam ${daysLeft} dias para a viagem! ✈`,
       city: randomCity,
       daysLeft,
-      photoUrl: photo.response?.results[0].urls.regular,
+      // @ts-ignore
+      photoUrl: photo.response?.urls.regular,
     },
   };
 
